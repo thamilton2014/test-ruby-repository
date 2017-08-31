@@ -5,6 +5,7 @@ languages: ruby
 variables:
   - key: value
   - key: value
+  - key: value
 
 # The different kinds of stages our build goes through.
 phases:
