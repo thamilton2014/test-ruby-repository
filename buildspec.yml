@@ -19,9 +19,11 @@ phases:
   # The testing phase in which we run unit/integration/functional/acceptance tests.
   test:
     description: This is where tests run
+    target_url: https://www.yahoo.com
     commands:
       - echo "Test phase"
       - rspec
+      - echo "After the test result"
 
   # The building phase in which we compile/archive our codebase.
   build:
