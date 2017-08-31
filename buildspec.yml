@@ -1,0 +1,38 @@
+# This selects the docker image you want to use.
+languages: ruby
+
+# Sets the environment variables for docker containers.
+variables:
+  - key: value
+  - key: value
+
+# The different kinds of stages our build goes through.
+phases:
+  # The initial phase in which we install base packages.
+  pre:
+    description: This is where installing packages happens.
+    target_url: https://www.google.com
+    commands:
+      - bundle install
+
+  # The testing phase in which we run unit/integration/functional/acceptance tests.
+  test:
+    description: This is where tests run
+    commands:
+      - echo "Test phase"
+
+  # The building phase in which we compile/archive our codebase.
+  build:
+    description: This is where you write your description
+    commands:
+      - echo "Build phase"
+
+  # The post phase in which we send logs or test data to external sources.
+  post:
+    commands:
+      - echo "Post phase"
+
+  # The deploy phase in which we send our artifacts to a binary repository or rsync data.
+  deploy:
+    commands:
+      - echo "Deploy phase"
