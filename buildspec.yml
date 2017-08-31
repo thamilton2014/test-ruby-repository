@@ -5,6 +5,7 @@ languages: ruby
 variables:
   - key: value
   - key: value
+  - key: value
 
 # The different kinds of stages our build goes through.
 phases:
@@ -20,6 +21,7 @@ phases:
     description: This is where tests run
     commands:
       - echo "Test phase"
+      - rspec
 
   # The building phase in which we compile/archive our codebase.
   build:
