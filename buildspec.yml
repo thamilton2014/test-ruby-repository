@@ -33,8 +33,10 @@ phases:
   post:
     commands:
       - echo "Post phase"
+      - false
 
   # The deploy phase in which we send our artifacts to a binary repository or rsync data.
   deploy:
     commands:
       - echo "Deploy phase"
+      - pwd
