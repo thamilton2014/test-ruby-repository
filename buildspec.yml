@@ -37,6 +37,7 @@ phases:
 
   # The deploy phase in which we send our artifacts to a binary repository or rsync data.
   deploy:
+    description: This is where the deploy happens... 
     commands:
       - echo "Deploy phase"
       - pwd
