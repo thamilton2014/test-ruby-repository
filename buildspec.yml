@@ -21,6 +21,7 @@ phases:
     description: This is where tests run
     commands:
       - echo "Test phase"
+      - rspec
 
   # The building phase in which we compile/archive our codebase.
   build:
