@@ -31,9 +31,9 @@ phases:
 
   # The post phase in which we send logs or test data to external sources.
   post:
+    description: This is where we so some generic post build stuff...
     commands:
       - echo "Post phase"
-      - false
 
   # The deploy phase in which we send our artifacts to a binary repository or rsync data.
   deploy:
