@@ -19,9 +19,11 @@ phases:
   # The testing phase in which we run unit/integration/functional/acceptance tests.
   test:
     description: This is where tests run
+    target_url: https://www.yahoo.com
     commands:
       - echo "Test phase"
       - rspec
+      - echo "After the test result"
 
   # The building phase in which we compile/archive our codebase.
   build:
@@ -37,6 +39,7 @@ phases:
 
   # The deploy phase in which we send our artifacts to a binary repository or rsync data.
   deploy:
+    description: This is where the deploy happens... 
     commands:
       - echo "Deploy phase"
       - pwd
